@@ -16,15 +16,18 @@ export class MenuComponent {
         label: 'Pipes de Angular', icon: 'pi pi-desktop', items: [
           {
             label: 'Textos y fechas',
-            icon: 'pi pi-align-left'
+            icon: 'pi pi-align-left',
+            routerLink: '/'
           },
           {
             label: 'Números',
-            icon: 'pi pi-dollar'
+            icon: 'pi pi-dollar',
+            routerLink: 'numbers'
           },
           {
             label: 'No comunes',
-            icon: 'pi pi-globe'
+            icon: 'pi pi-globe',
+            routerLink: 'uncommon'
           }
         ]
       },
@@ -35,8 +38,9 @@ export class MenuComponent {
             icon: 'pi pi-cog',
             items: [
               {
-                label: 'Otro elemento',
+                label: 'Custom Pipes',
                 icon: 'pi pi-cog',
+                routerLink: 'custom'
               }
             ]
           }
@@ -44,6 +48,4 @@ export class MenuComponent {
       },
     ]
   }
-
-
 }
